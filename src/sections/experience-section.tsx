@@ -1,65 +1,90 @@
 import Section from "../components/section";
 
 export default function ExperienceSection() {
-    const experience = [
-        {
-            image: "/assets/google.svg",
-            title: "Sr. Software engineer",
-            company: "Google",
-            location: "New York",
-            start: "Jan 2024",
-            end: "Present",
-            description: [
-                "Lead end-to-end development of large-scale, high-performance systems used by millions of users.",
-                "Mentor junior engineers, conduct code reviews, and uphold engineering best practices.",
-            ],
-        },
-        {
-            image: "/assets/microsoft.svg",
-            title: "Full Stack developer",
-            company: "Microsoft",
-            location: "London",
-            start: "May 2021",
-            end: "Dec 2024",
-            description: [
-                "Full-stack development of large-scale, high-performance systems used by millions of users.",
-                "Mentor junior engineers, conduct code reviews, and uphold engineering best practices.",
-            ],
-        },
-    ];
-
     return (
-        <Section title="Experience">
-            <div className="space-y-6">
-                {experience.map((experience) => (
-                    <div key={experience.title} className="w-full border border-gray-200 p-6 rounded-xl">
-                        <div className="flex flex-col md:flex-row items-start gap-3 md:items-center justify-between w-full text-gray-500">
-                            <div className="flex flex-col md:flex-row items-start md:items-center gap-3">
-                                <div className="bg-gray-50 border border-gray-200 rounded-lg p-3">
-                                    <img
-                                        src={experience.image}
-                                        alt={experience.title}
-                                        width={25}
-                                        height={25}
-                                    />
-                                </div>
-                                <div>
-                                    <h3 className="text-base font-medium text-gray-800">
-                                        {experience.title}
-                                    </h3>
-                                    <div>{experience.company}</div>
-                                </div>
-                            </div>
-                            <div>{experience.start} - {experience.end}</div>
+        <Section title="Internship Experience">
+            <div>
+            <div className="w-full border border-gray-200 p-6 rounded-xl">
+                <div className="flex flex-col md:flex-row items-start gap-3 md:items-center justify-between w-full text-gray-500">
+                    <div className="flex flex-col md:flex-row items-start md:items-center gap-3">
+                        <div className="bg-gray-50 border border-gray-200 rounded-lg p-3">
+                            <img
+                                src="/assets/sucofindo.png"
+                                alt="Intern"
+                                width={50}
+                                height={50}
+                                className="size-5.5"
+                            />
                         </div>
-                        <ul className="list-disc px-5 mt-6 text-gray-500 space-y-2">
-                            {experience.description.map((description) => (
-                                <li key={description}>{description}</li>
-                            ))}
-                        </ul>
+                        <div>
+                            <h3 className="text-base font-medium text-gray-800">
+                                Climate Solutions and Sustainable Energy Intern
+                            </h3>
+                            <div>PT Sucofindo (Persero)</div>
+                        </div>
                     </div>
-                ))}
+                    <div>10 Feb 2026 - Present</div>
+                </div>
+                <p className="mt-6 text-gray-500" align="justify">
+                    Work on verification and validation of annual powerplant carbon emission report based on ISO 14064
+                </p>
             </div>
+            <br/>
+            <div className="w-full border border-gray-200 p-6 rounded-xl">
+                <div className="flex flex-col md:flex-row items-start gap-3 md:items-center justify-between w-full text-gray-500">
+                    <div className="flex flex-col md:flex-row items-start md:items-center gap-3">
+                        <div className="bg-gray-50 border border-gray-200 rounded-lg p-3">
+                            <img
+                                src="/assets/pln-ip.png"
+                                alt="Intern"
+                                width={50}
+                                height={50}
+                                className="size-5.5"
+                            />
+                        </div>
+                        <div>
+                            <h3 className="text-base font-medium text-gray-800">
+                                Boiler Maintenance Intern
+                            </h3>
+                            <div>PLN Indonesia Power UBP Suralaya</div>
+                        </div>
+                    </div>
+                    <div>2 Jan 2026 - 30 Jan 2026</div>
+                </div>
+                <p className="mt-6 text-gray-500" align="justify">
+                    Analyzed the effect of additional bypass line on Temperature Control Valve (TCV) Reheater Pipe Head Loss Unit 5-7 Suralaya Steam Power Plant
+                </p>
+            </div>
+            <br/>
+            <a href="https://drive.google.com/file/d/1Rm0aurWTR9zFJkUJg6QW2fSmBqR5M0z5/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+            <div className="w-full border border-gray-200 p-6 rounded-xl">
+                <div className="flex flex-col md:flex-row items-start gap-3 md:items-center justify-between w-full text-gray-500">
+                    <div className="flex flex-col md:flex-row items-start md:items-center gap-3">
+                        <div className="bg-gray-50 border border-gray-200 rounded-lg p-3">
+                            <img
+                                src="/assets/fox.png"
+                                alt="Intern"
+                                width={50}
+                                height={50}
+                                className="size-5.5"
+                            />
+                        </div>
+                        <div>
+                            <h3 className="text-base font-medium text-gray-800">
+                                Engineering Trainee
+                            </h3>
+                            <div>Fox Harris Lite Metro Indah Bandung</div>
+                        </div>
+                    </div>
+                    <div> 5 Apr 2022 - 15 Aug 2022</div>
+                </div>
+                <p className="mt-6 text-gray-500" align="justify">
+                    Performed skilled maintenance and troubleshooting of air-conditioning systems, electrical equipment, and public facilities to ensure uninterrupted hotel operations and guest satisfaction.
+                </p>
+            </div>
+            </a>
+            </div>
+            
         </Section>
     );
 }

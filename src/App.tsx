@@ -6,7 +6,8 @@ import EducationSection from "./sections/education-section";
 import ExperienceSection from "./sections/experience-section";
 import HeroSection from "./sections/hero-section";
 import ProjectsSection from "./sections/projects-section";
-import SkillsSection from "./sections/skills-section";
+import OrganizationSection from "./sections/organization-section";
+import CertiSection from "./sections/certi-section";
 
 export default function App() {
     return (
@@ -14,10 +15,11 @@ export default function App() {
             <LenisScroll />
             <HeroSection />
             <AboutSection />
-            <ProjectsSection />
-            <ExperienceSection />
             <EducationSection />
-            <SkillsSection />
+            <ExperienceSection />
+            <ProjectsSection />
+            <OrganizationSection />
+            <CertiSection />
             <ContactSection />
             <Footer />
         </main>
